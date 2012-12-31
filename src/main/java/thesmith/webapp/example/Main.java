@@ -4,10 +4,9 @@ import thesmith.webapp.JettyServer;
 import thesmith.webapp.ServletBinder;
 
 public class Main {
-  private static final int PORT = 8080;
 
   private void start() {
-    JettyServer server = new JettyServer(PORT);
+    JettyServer server = new JettyServer();
     bind(server);
     server.start();
   }
